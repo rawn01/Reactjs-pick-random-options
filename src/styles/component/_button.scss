@@ -1,0 +1,35 @@
+$myColor: rgba(166, 57, 180, 0.671);
+
+
+.big-button {
+   background-color: $myColor;
+   color: white;
+   border: none;
+   padding: 30px 0px;
+   font-size: 175%;
+   font-weight: bold;
+   width: 100%;
+   box-shadow: 0 3px 4px darken($myColor, 30%);
+}
+
+.big-button:disabled {
+   opacity: 0.6;
+}
+
+
+
+
+.buttons {
+   background: purple;
+   border: none;
+   border-bottom: 1px solid darken(purple, 10%);
+   color: silver;
+   font-weight: 500;
+   padding: 5px;
+}
+
+.buttons--remove {
+   border: none;
+   background: none;
+   padding: 0;
+}
