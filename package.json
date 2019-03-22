@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run prod"
   },
   "author": "rawn",
   "license": "ISC",
@@ -20,6 +23,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "^2.0.1",
+    "express": "^4.16.4",
     "live-server": "^1.2.1",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
